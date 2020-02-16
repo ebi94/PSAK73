@@ -28,3 +28,6 @@ Route::get('input/add','FormController@add');
 
 Route::get('data', 'DataController@index');
 Route::get('data/export_excel', 'DataController@export_excel');
+
+Route::get('export', 'ExportController@index');
+Route::get('export/export_excel', 'ExportController@export_excel');

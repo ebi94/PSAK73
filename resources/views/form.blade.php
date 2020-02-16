@@ -18,8 +18,12 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
-              <label>Nama PT</label>
-              <input class="form-control" type="text" name="title">
+              <label>Nama Perusahaan / PT
+                <!-- <span class="float-right">
+                  <i class="far fa-comments"></i>
+                </span> -->
+              </label>
+              <input class="form-control" type="text" name="nama_pt">
             </div>
           </div>
         </div>
@@ -27,7 +31,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>Nomor Kontrak</label>
-              <input class="form-control" type="text" name="contract_no">
+              <input class="form-control" type="text" name="nomor_kontrak">
             </div>
           </div>
           <div class="col-md-4">
@@ -52,7 +56,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>Jenis Sewa</label>
-              <input class="form-control" name="criteria" type="text">
+              <input class="form-control" name="jenis_sewa" type="text">
             </div>
           </div>
           <div class="col-md-4">
@@ -85,7 +89,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>a. Apakah terdapat modifikasi ?</label>
-              <input class="form-control" type="text">
+              <input class="form-control" type="text" name="ns_a">
             </div>
           </div>
           <div class="col-md-4">
@@ -102,7 +106,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>b. Apakah kontrak dinegosiasikan dengan kontrak lain ?</label>
-              <input class="form-control" type="text">
+              <input class="form-control" type="text" name="ns_b">
             </div>
           </div>
           <div class="col-md-4">
@@ -119,7 +123,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>c. 1. Apakah kontrak mengandung opsi perpanjangan ?</label>
-              <input class="form-control" type="text">
+              <input class="form-control" type="text" name="ns_c1">
             </div>
           </div>
           <div class="col-md-4">
@@ -136,7 +140,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>c. 2. Penyewa cukup pasti untuk mengeksekusi Opsi tersebut ?</label>
-              <input class="form-control" type="text">
+              <input class="form-control" type="text" name="ns_c2">
             </div>
           </div>
           <div class="col-md-4">
@@ -153,7 +157,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>d. 1. Apakah kontrak mengandung Opsi terminasi ?</label>
-              <input class="form-control" type="text">
+              <input class="form-control" type="text" name="ns_d1">
             </div>
           </div>
           <div class="col-md-4">
@@ -170,24 +174,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>d. 2. Penyewa cukup pasti untuk tidak mengeksekusi Opsi tersebut ?</label>
-              <input class="form-control" type="text">
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="exampleInputFile">Upload image</label>
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile">Choose file</label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="form-group">
-              <label>a. Apakah terdapat modifikasi ?</label>
-              <input class="form-control" type="text">
+              <input class="form-control" type="text" name="ns_d2">
             </div>
           </div>
           <div class="col-md-4">
@@ -217,7 +204,7 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label>1. Certain Asset ? *</label>
-                <select class="form-control">
+                <select class="form-control" name="is_1">
                   <option>Yes/No</option>
                   <option>Yes</option>
                   <option>No</option>
@@ -238,7 +225,7 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label>2. Right to Operate ? *</label>
-                <select class="form-control">
+                <select class="form-control" name="is_2">
                   <option>Yes/No</option>
                   <option>Yes</option>
                   <option>No</option>
@@ -259,7 +246,7 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label>3. Control of the Output or other utility ? *</label>
-                <select class="form-control">
+                <select class="form-control" name="is_3">
                   <option>Yes/No</option>
                   <option>Yes</option>
                   <option>No</option>
@@ -280,10 +267,10 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label>4. Control Physical Asset ? *</label>
-                <select class="form-control">
-                  <option>Yes/No</option>
-                  <option>Yes</option>
-                  <option>No</option>
+                <select class="form-control" name="is_4">
+                  <option value="">Yes/No</option>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
                 </select>
               </div>
             </div>
@@ -301,10 +288,10 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label>5. Contract Price ? *</label>
-                <select class="form-control">
-                  <option>Yes/No</option>
-                  <option>Yes</option>
-                  <option>No</option>
+                <select class="form-control" name="is_5">
+                  <option value="">Yes/No</option>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
                 </select>
               </div>
             </div>
@@ -322,10 +309,10 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label>6. Output used by third party ? *</label>
-                <select class="form-control">
-                  <option>Yes/No</option>
-                  <option>Yes</option>
-                  <option>No</option>
+                <select class="form-control" name=ïs_6>
+                  <option value="">Yes/No</option>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
                 </select>
               </div>
             </div>
@@ -343,10 +330,10 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label>7. Right to control the use of Asset ? *</label>
-                <select class="form-control">
-                  <option>Yes/No</option>
-                  <option>Yes</option>
-                  <option>No</option>
+                <select class="form-control" name="is_7">
+                  <option value="">Yes/No</option>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
                 </select>
               </div>
             </div>
@@ -364,7 +351,7 @@
             <div class="col-md-8">
               <div class="form-group">
                 <label>Apakah kontrak Sewa terdiri dari beberapa komponen ?</label>
-                <input class="form-control" type="text">
+                <input class="form-control" type="text" name="komponen">
               </div>
             </div>
             <div class="col-md-4">
@@ -381,7 +368,7 @@
             <div class="col-md-8">
               <div class="form-group">
                 <label>Lokasi sewa ?</label>
-                <input class="form-control" type="text">
+                <input class="form-control" type="text" name="lokasi">
               </div>
             </div>
             <div class="col-md-4">
@@ -401,13 +388,13 @@
           <div class="col">
             <div class="form-group">
               <label>Start Date</label>
-              <input class="form-control" type="date" placeholder="01/01/20">
+              <input class="form-control" type="date" placeholder="01/01/20" name="start_date">
             </div>
           </div>
           <div class="col">
             <div class="form-group">
               <label>End Date</label>
-              <input class="form-control" type="date" placeholder="01/01/20">
+              <input class="form-control" type="date" placeholder="01/01/20" name="end_date">
             </div>
           </div>
         </div>
@@ -415,7 +402,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>Besar nilai kontrak ?</label>
-              <input class="form-control" type="text">
+              <input class="form-control" type="text" onkeyup="splitInDots(this)" name="nilai_kontrak">
             </div>
           </div>
           <div class="col-md-4">
@@ -541,3 +528,38 @@
 
   })
 </script>
+<script type="text/javascript">
+    
+    function reverseNumber(input) {
+     return [].map.call(input, function(x) {
+        return x;
+      }).reverse().join(''); 
+    }
+    
+    function plainNumber(number) {
+       return number.split('.').join('');
+    }
+    
+    function splitInDots(input) {
+      
+      var value = input.value,
+          plain = plainNumber(value),
+          reversed = reverseNumber(plain),
+          reversedWithDots = reversed.match(/.{1,3}/g).join('.'),
+          normal = reverseNumber(reversedWithDots);
+      
+      console.log(plain,reversed, reversedWithDots, normal);
+      input.value = normal;
+    }
+    
+    function oneDot(input) {
+      var value = input.value,
+          value = plainNumber(value);
+      
+      if (value.length > 3) {
+        value = value.substring(0, value.length - 3) + '.' + value.substring(value.length - 3, value.length);
+      }
+      console.log(value);
+      input.value = value;
+    }
+  </script>

@@ -13,17 +13,17 @@ use App\Http\Controllers\Controller;
 
 class DataController extends Controller
 {
-    // public function index()
-    // {
-    //   $data = DB::table('data_tables')->get();
-    // 	return view('datalist',['data' => $data]);
-    // }
-
     public function index()
-  	{
-  		$data = Data::all();
-  		return view('list',['data' => $data]);
-  	}
+    {
+      $data = DB::table('abm_summary')->get();
+    return view('list',['data' => $data]);
+    }
+
+    // public function index()
+  	// {
+  	// 	$data = Data::all();
+  	// 	return view('list',['data' => $data]);
+  	// }
 
   	public function export_excel()
   	{
