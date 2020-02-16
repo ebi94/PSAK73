@@ -106,14 +106,14 @@
       </div>
       <!-- /.card -->
     </div>
-    <div  class="col-md-2">
+    <!-- <div  class="col-md-2">
       <a href="data/export_excel" target="_blank">
         <button class="btn btn-block btn-primary">Export to Excel</button>
       </a>
-    </div>
+    </div> -->
     <div  class="col-md-2">
       <a href="export/export_excel" target="_blank">
-        <button class="btn btn-block btn-secondary">Export to Excel</button>
+        <button class="btn btn-block btn-success">Export to Excel</button>
       </a>
     </div>
     <!-- /.col -->
@@ -124,20 +124,20 @@
 
 <!-- Modal Edit -->
 <div class="modal fade" id="modal-edit">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Default Modal</h4>
+              <h4 class="modal-title">Ubah Data</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <p>One fine body&hellip;</p>
+              @include('editdetail')
             </div>
             <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+              <button type="button" class="btn btn-primary">Simpan</button> -->
             </div>
           </div>
           <!-- /.modal-content -->
@@ -148,20 +148,19 @@
 
 <!-- Modal Lihat -->
 <div class="modal fade" id="modal-lihat">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Default Modal</h4>
+              <h4 class="modal-title">Lihat Data</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <p>One fine body&hellip;</p>
+              @include('showdetail', ['myValue' => "test", 'mySecondValue' => "Test2"])
             </div>
             <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
             </div>
           </div>
           <!-- /.modal-content -->

@@ -18,7 +18,11 @@
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
-              <label>Nama Perusahaan / PT</label>
+              <label>Nama Perusahaan / PT
+                <!-- <span class="float-right">
+                  <i class="far fa-comments"></i>
+                </span> -->
+              </label>
               <input class="form-control" type="text" name="nama_pt">
             </div>
           </div>

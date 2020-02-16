@@ -6,8 +6,8 @@
     <!-- Input Data  -->
     <div class="card card-secondary">
       <div class="card-header">
-        <h3 class="card-title">Contract Form</h3>
-
+        <h3 class="card-title">Show Detail</h3>
+        
         <div class="card-tools">
           <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
           <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-remove"></i></button>
@@ -19,7 +19,7 @@
           <div class="col-md-12">
             <div class="form-group">
               <label>Nama Perusahaan / PT</label>
-              <input class="form-control" type="text" name="nama_pt">
+              -
             </div>
           </div>
         </div>
@@ -27,15 +27,14 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>Nomor Kontrak</label>
-              <input class="form-control" type="text" name="nomor_kontrak">
+              -
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="exampleInputFile">Upload image</label>
+              <label for="exampleInputFile">Image</label>
               <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile">Choose file</label>
+                -
               </div>
             </div>
           </div>
@@ -44,7 +43,7 @@
           <div class="col-md-12">
             <div class="form-group">
               <label>Vendor</label>
-              <input class="form-control" type="text" name="vendor">
+              -
             </div>
           </div>
         </div>
@@ -52,22 +51,21 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>Jenis Sewa</label>
-              <input class="form-control" name="jenis_sewa" type="text">
+              -
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="exampleInputFile">Upload image</label>
+              <label for="exampleInputFile">Image</label>
               <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile">Choose file</label>
+                -
               </div>
             </div>
           </div>
         </div>
         </div>
         <div class="card-footer">
-          * Wajib diisi
+          * 
         </div>
       </div>
 
@@ -85,15 +83,15 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>a. Apakah terdapat modifikasi ?</label>
-              <input class="form-control" type="text" name="ns_a">
+              -
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="exampleInputFile">Upload image</label>
+              <label for="exampleInputFile">Image</label>
               <div class="custom-file">
                 <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile">Choose file</label>
+                -
               </div>
             </div>
           </div>
@@ -102,15 +100,15 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>b. Apakah kontrak dinegosiasikan dengan kontrak lain ?</label>
-              <input class="form-control" type="text" name="ns_b">
+              -
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="exampleInputFile">Upload image</label>
+              <label for="exampleInputFile">Image</label>
               <div class="custom-file">
                 <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile">Choose file</label>
+                -
               </div>
             </div>
           </div>
@@ -119,15 +117,14 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>c. 1. Apakah kontrak mengandung opsi perpanjangan ?</label>
-              <input class="form-control" type="text" name="ns_c1">
+              -
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="exampleInputFile">Upload image</label>
+              <label for="exampleInputFile">Image</label>
               <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile">Choose file</label>
+                -
               </div>
             </div>
           </div>
@@ -141,10 +138,9 @@
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="exampleInputFile">Upload image</label>
+              <label for="exampleInputFile">Image</label>
               <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile">Choose file</label>
+                -
               </div>
             </div>
           </div>
@@ -158,10 +154,9 @@
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="exampleInputFile">Upload image</label>
+              <label for="exampleInputFile">Image</label>
               <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile">Choose file</label>
+                -
               </div>
             </div>
           </div>
@@ -175,10 +170,9 @@
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="exampleInputFile">Upload image</label>
+              <label for="exampleInputFile">Image</label>
               <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile">Choose file</label>
+                -
               </div>
             </div>
           </div>
@@ -209,10 +203,9 @@
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="exampleInputFile">Upload image *</label>
+                <label for="exampleInputFile">Image *</label>
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="customFile">
-                  <label class="custom-file-label" for="customFile">Choose</label>
+                  -
                 </div>
               </div>
             </div>
@@ -230,10 +223,9 @@
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="exampleInputFile">Upload image *</label>
+                <label for="exampleInputFile">Image *</label>
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="customFile">
-                  <label class="custom-file-label" for="customFile">Choose</label>
+                  -
                 </div>
               </div>
             </div>
@@ -251,10 +243,9 @@
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="exampleInputFile">Upload image *</label>
+                <label for="exampleInputFile">Image *</label>
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="customFile">
-                  <label class="custom-file-label" for="customFile">Choose</label>
+                  -
                 </div>
               </div>
             </div>
@@ -272,10 +263,9 @@
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="exampleInputFile">Upload image *</label>
+                <label for="exampleInputFile">Image *</label>
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="customFile">
-                  <label class="custom-file-label" for="customFile">Choose</label>
+                  -
                 </div>
               </div>
             </div>
@@ -293,10 +283,9 @@
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="exampleInputFile">Upload image *</label>
+                <label for="exampleInputFile">Image *</label>
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="customFile">
-                  <label class="custom-file-label" for="customFile">Choose</label>
+                  -
                 </div>
               </div>
             </div>
@@ -314,10 +303,9 @@
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="exampleInputFile">Upload image *</label>
+                <label for="exampleInputFile">Image *</label>
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="customFile">
-                  <label class="custom-file-label" for="customFile">Choose</label>
+                  -
                 </div>
               </div>
             </div>
@@ -335,10 +323,9 @@
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="exampleInputFile">Upload image*</label>
+                <label for="exampleInputFile">Image*</label>
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="customFile">
-                  <label class="custom-file-label" for="customFile">Choose</label>
+                  -
                 </div>
               </div>
             </div>
@@ -347,15 +334,14 @@
             <div class="col-md-8">
               <div class="form-group">
                 <label>Apakah kontrak Sewa terdiri dari beberapa komponen ?</label>
-                <input class="form-control" type="text" name="komponen">
+                -
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="exampleInputFile">Upload image</label>
+                <label for="exampleInputFile">Image</label>
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="customFile">
-                  <label class="custom-file-label" for="customFile">Choose file</label>
+                  -
                 </div>
               </div>
             </div>
@@ -364,15 +350,14 @@
             <div class="col-md-8">
               <div class="form-group">
                 <label>Lokasi sewa ?</label>
-                <input class="form-control" type="text" name="lokasi">
+                -
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="exampleInputFile">Upload image</label>
+                <label for="exampleInputFile">Image</label>
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="customFile">
-                  <label class="custom-file-label" for="customFile">Choose file</label>
+                  -
                 </div>
               </div>
             </div>
@@ -384,13 +369,13 @@
           <div class="col">
             <div class="form-group">
               <label>Start Date</label>
-              <input class="form-control" type="date" placeholder="01/01/20" name="start_date">
+              -
             </div>
           </div>
           <div class="col">
             <div class="form-group">
               <label>End Date</label>
-              <input class="form-control" type="date" placeholder="01/01/20" name="end_date">
+              -
             </div>
           </div>
         </div>
@@ -398,33 +383,23 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>Besar nilai kontrak ?</label>
-              <input class="form-control" type="text" onkeyup="splitInDots(this)" name="nilai_kontrak">
+              -
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="exampleInputFile">Upload image</label>
+              <label for="exampleInputFile">Image</label>
               <div class="custom-file">
-                <input type="file" class="custom-file-input" id="customFile">
-                <label class="custom-file-label" for="customFile">Choose file</label>
+                -
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="card-footer">
-        * Wajib diisi
+        *
       </div>
     </div>
-
-  <div class="row">
-    <div  class="col-md-2">
-      <input type="submit" class="btn btn-block btn-primary" value="Simpan Data">
-    </div>
-    <div  class="col-md-2">
-      <input type="cancel" class="btn btn-block btn-primary" value="Batalkan">
-    </div>
-  </div>
   <div class="col"></div>
 
   </form>
