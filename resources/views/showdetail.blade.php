@@ -19,7 +19,7 @@
           <div class="col-md-12">
             <div class="form-group">
               <label>Nama Perusahaan / PT</label>
-              -
+              <br/><span id="title"></span>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>Nomor Kontrak</label>
-              -
+              <br/><span id="nomorkontrak"></span>
             </div>
           </div>
           <div class="col-md-4">
@@ -43,7 +43,7 @@
           <div class="col-md-12">
             <div class="form-group">
               <label>Vendor</label>
-              -
+              <br/><span id="vendor"></span>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>Jenis Sewa</label>
-              -
+              <br/><span id="jenissewa"></span>
             </div>
           </div>
           <div class="col-md-4">
@@ -83,7 +83,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>a. Apakah terdapat modifikasi ?</label>
-              -
+              <br/><span id="nsa"></span>
             </div>
           </div>
           <div class="col-md-4">
@@ -100,7 +100,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>b. Apakah kontrak dinegosiasikan dengan kontrak lain ?</label>
-              -
+              <br/><span id="nsb"></span>
             </div>
           </div>
           <div class="col-md-4">
@@ -117,7 +117,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>c. 1. Apakah kontrak mengandung opsi perpanjangan ?</label>
-              -
+              <br/><span id="nsc1"></span>
             </div>
           </div>
           <div class="col-md-4">
@@ -133,7 +133,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>c. 2. Penyewa cukup pasti untuk mengeksekusi Opsi tersebut ?</label>
-              <input class="form-control" type="text" name="ns_c2">
+              <br/><span id="nsc2"></span>
             </div>
           </div>
           <div class="col-md-4">
@@ -149,7 +149,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>d. 1. Apakah kontrak mengandung Opsi terminasi ?</label>
-              <input class="form-control" type="text" name="ns_d1">
+              <br/><span id="ns-d1"></span>
             </div>
           </div>
           <div class="col-md-4">
@@ -165,7 +165,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>d. 2. Penyewa cukup pasti untuk tidak mengeksekusi Opsi tersebut ?</label>
-              <input class="form-control" type="text" name="ns_d2">
+              <br/><span id="nsd2"></span>
             </div>
           </div>
           <div class="col-md-4">
@@ -194,11 +194,7 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label>1. Certain Asset ? *</label>
-                <select class="form-control" name="is_1">
-                  <option>Yes/No</option>
-                  <option>Yes</option>
-                  <option>No</option>
-                </select>
+                <br/><span id="is1"></span>
               </div>
             </div>
             <div class="col-md-4">
@@ -214,11 +210,7 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label>2. Right to Operate ? *</label>
-                <select class="form-control" name="is_2">
-                  <option>Yes/No</option>
-                  <option>Yes</option>
-                  <option>No</option>
-                </select>
+                <br/><span id="is2"></span>
               </div>
             </div>
             <div class="col-md-4">
@@ -234,11 +226,7 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label>3. Control of the Output or other utility ? *</label>
-                <select class="form-control" name="is_3">
-                  <option>Yes/No</option>
-                  <option>Yes</option>
-                  <option>No</option>
-                </select>
+                <br/><span id="is3"></span>
               </div>
             </div>
             <div class="col-md-4">
@@ -254,11 +242,7 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label>4. Control Physical Asset ? *</label>
-                <select class="form-control" name="is_4">
-                  <option value="">Yes/No</option>
-                  <option value="1">Yes</option>
-                  <option value="0">No</option>
-                </select>
+                <br/><span id="is4"></span>
               </div>
             </div>
             <div class="col-md-4">
@@ -274,11 +258,7 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label>5. Contract Price ? *</label>
-                <select class="form-control" name="is_5">
-                  <option value="">Yes/No</option>
-                  <option value="1">Yes</option>
-                  <option value="0">No</option>
-                </select>
+                <br/><span id="is5"></span>
               </div>
             </div>
             <div class="col-md-4">
@@ -294,11 +274,7 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label>6. Output used by third party ? *</label>
-                <select class="form-control" name=ïs_6>
-                  <option value="">Yes/No</option>
-                  <option value="1">Yes</option>
-                  <option value="0">No</option>
-                </select>
+                <br/><span id="is6"></span>
               </div>
             </div>
             <div class="col-md-4">
@@ -314,11 +290,7 @@
             <div class="col-sm-8">
               <div class="form-group">
                 <label>7. Right to control the use of Asset ? *</label>
-                <select class="form-control" name="is_7">
-                  <option value="">Yes/No</option>
-                  <option value="1">Yes</option>
-                  <option value="0">No</option>
-                </select>
+                <br/><span id="is7"></span>
               </div>
             </div>
             <div class="col-md-4">
@@ -334,7 +306,7 @@
             <div class="col-md-8">
               <div class="form-group">
                 <label>Apakah kontrak Sewa terdiri dari beberapa komponen ?</label>
-                -
+                <br/><span id="komponen"></span>
               </div>
             </div>
             <div class="col-md-4">
@@ -350,7 +322,7 @@
             <div class="col-md-8">
               <div class="form-group">
                 <label>Lokasi sewa ?</label>
-                -
+                <br/><span id="lokasi"></span>
               </div>
             </div>
             <div class="col-md-4">
@@ -369,13 +341,13 @@
           <div class="col">
             <div class="form-group">
               <label>Start Date</label>
-              -
+              <br/><span id="startdate"></span>
             </div>
           </div>
           <div class="col">
             <div class="form-group">
               <label>End Date</label>
-              -
+              <br/><span id="enddate"></span>
             </div>
           </div>
         </div>
@@ -383,7 +355,7 @@
           <div class="col-md-8">
             <div class="form-group">
               <label>Besar nilai kontrak ?</label>
-              -
+              <br/><span id="nilaikontrak"></span>
             </div>
           </div>
           <div class="col-md-4">

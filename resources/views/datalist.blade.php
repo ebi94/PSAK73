@@ -65,7 +65,35 @@
                 <td>{{ $d->end_date }}</td>
                 <td>{{ $d->nilai_kontrak }}</td>
                 <td>
-                  <button type="button" class="btn btn-block btn-outline-primary btn-xs"  data-toggle="modal" data-target="#modal-lihat">Lihat</button>
+                  <button 
+                    type="button" 
+                    class="modalihat btn btn-block btn-outline-primary btn-xs"  
+                    data-toggle="modal" 
+                    data-target="#modal-lihat" 
+                    data-title="{{ $d->nama_pt }}" 
+                    data-nomorkontrak="{{ $d->nomor_kontrak }}"
+                    data-vendor="{{ $d->vendor }}"
+          			    data-jenissewa="{{ $d->jenis_sewa }}"
+                    data-nsa="{{ $d->ns_a }}"
+                    data-nsb="{{ $d->ns_b }}"
+                    data-nsc="{{ $d->ns_c1 }}"
+                    data-nsc2="{{ $d->ns_c2 }}"
+                    data-nsd1="{{ $d->ns_d1 }}"
+                    data-nsd2="{{ $d->ns_d2 }}"
+                    data-is1="{{ $d->is_1 }}"
+                    data-is2="{{ $d->is_2 }}"
+                    data-is3="{{ $d->is_3 }}"
+                    data-is4="{{ $d->is_4 }}"
+                    data-is5="{{ $d->is_5 }}"
+                    data-is6="{{ $d->is_6 }}"
+                    data-is7="{{ $d->is_7 }}"
+                    data-komponen="{{ $d->komponen }}"
+                    data-lokasi="{{ $d->lokasi }}"
+                    data-startdate="{{ $d->start_date }}"
+                    data-enddate="{{ $d->end_date }}"
+                    data-nilaikontrak="{{ $d->nilai_kontrak }}">
+                      Lihat
+                  </button>
                   <button type="button" class="btn btn-block btn-outline-info btn-xs" data-toggle="modal" data-target="#modal-edit">Ubah</button>
                   <button type="button" class="btn btn-block btn-outline-danger btn-xs" data-toggle="modal" data-target="#modal-hapus">Hapus</button>
                 </td>
@@ -157,7 +185,7 @@
               </button>
             </div>
             <div class="modal-body">
-              @include('showdetail', ['myValue' => "test", 'mySecondValue' => "Test2"])
+              @include('showdetail')
             </div>
             <div class="modal-footer justify-content-between">
               <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
@@ -215,5 +243,54 @@
       "info": true,
       "autoWidth": false,
     });
+  });
+
+  $(document).on("click", ".modalihat", function () {
+     
+      var title = $(this).data('title');
+      var nomorkontrak = $(this).data('nomorkontrak');
+      var vendor = $(this).data('vendor');
+      var jenissewa = $(this).data('jenissewa');
+      var nsa = $(this).data('nsa');
+      var nsb = $(this).data('nsb');
+      var nsc = $(this).data('nsc1');
+      var nsc2 = $(this).data('nsc2');
+      var nsd1 = $(this).data('nsd1');
+      var nsd2 = $(this).data('nsd2');
+      var is1 = $(this).data('is1');
+      var is2 = $(this).data('is2');
+      var is3 = $(this).data('is3');
+      var is4 = $(this).data('is4');
+      var is5 = $(this).data('is5');
+      var is6 = $(this).data('is6');
+      var is7 = $(this).data('is7');
+      var komponen = $(this).data('komponen');
+      var lokasi = $(this).data('lokasi');
+      var startdate = $(this).data('startdate');
+      var enddate = $(this).data('enddate');
+      var nilaikontrak = $(this).data('nilaikontrak');
+
+      $("#title").html( title );
+      $("#nomorkontrak").html( nomorkontrak );
+      $("#vendor").html( vendor );
+      $("#jenissewa").html( jenissewa );
+      $("#nsa").html( nsa );
+      $("#nsb").html( nsb );
+      $("#nsc").html( nsc1 );
+      $("#nsc2").html( nsc2 );
+      $("#nsd1").html( nsd1 );
+      $("#nsd2").html( nsd2 );
+      $("#is1").html( is1 );
+      $("#is2").html( is2 );
+      $("#is3").html( is3 );
+      $("#is4").html( is4 );
+      $("#is5").html( is5 );
+      $("#is6").html( is6 );
+      $("#is7").html( is7 );
+      $("#komponen").html( komponen );
+      $("#lokasi").html( lokasi );
+      $("#startdate").html( startdate );
+      $("#enddate").html( enddate );
+      $("#nilaikontrak").html( nilaikontrak );
   });
 </script>
