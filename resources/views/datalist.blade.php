@@ -45,8 +45,8 @@
           			<td>{{ $d->nama_pt }}</td>
           			<td>{{ $d->nomor_kontrak }}</td>
           			<td>{{ $d->vendor }}</td>
-          			<!-- <td>{{ $d->jenis_sewa }}</td>
-                <td>{{ $d->ns_a }}</td>
+          			<td>{{ $d->jenis_sewa }}</td>
+                <!-- <td>{{ $d->ns_a }}</td>
                 <td>{{ $d->ns_b }}</td>
                 <td>{{ $d->ns_c1 }}</td>
                 <td>{{ $d->ns_c2 }}</td>
@@ -58,8 +58,8 @@
                 <td>{{ $d->is_4 }}</td>
                 <td>{{ $d->is_5 }}</td>
                 <td>{{ $d->is_6 }}</td>
-                <td>{{ $d->is_7 }}</td> -->
-                <td>{{ $d->komponen }}</td>
+                <td>{{ $d->is_7 }}</td>
+                <td>{{ $d->komponen }}</td> -->
                 <td>{{ $d->lokasi }}</td>
                 <td>{{ $d->start_date }}</td>
                 <td>{{ $d->end_date }}</td>
@@ -94,8 +94,44 @@
                     data-nilaikontrak="{{ $d->nilai_kontrak }}">
                       Lihat
                   </button>
-                  <button type="button" class="btn btn-block btn-outline-info btn-xs" data-toggle="modal" data-target="#modal-edit">Ubah</button>
-                  <button type="button" class="btn btn-block btn-outline-danger btn-xs" data-toggle="modal" data-target="#modal-hapus">Hapus</button>
+                  <button 
+                    type="button" 
+                    class="modaedit btn btn-block btn-outline-info btn-xs"  
+                    data-toggle="modal" 
+                    data-target="#modal-edit" 
+                    data-id="{{ $d->id }}"
+                    data-title="{{ $d->nama_pt }}" 
+                    data-nomorkontrak="{{ $d->nomor_kontrak }}"
+                    data-vendor="{{ $d->vendor }}"
+          			    data-jenissewa="{{ $d->jenis_sewa }}"
+                    data-nsa="{{ $d->ns_a }}"
+                    data-nsb="{{ $d->ns_b }}"
+                    data-nsc="{{ $d->ns_c1 }}"
+                    data-nsc2="{{ $d->ns_c2 }}"
+                    data-nsd1="{{ $d->ns_d1 }}"
+                    data-nsd2="{{ $d->ns_d2 }}"
+                    data-is1="{{ $d->is_1 }}"
+                    data-is2="{{ $d->is_2 }}"
+                    data-is3="{{ $d->is_3 }}"
+                    data-is4="{{ $d->is_4 }}"
+                    data-is5="{{ $d->is_5 }}"
+                    data-is6="{{ $d->is_6 }}"
+                    data-is7="{{ $d->is_7 }}"
+                    data-komponen="{{ $d->komponen }}"
+                    data-lokasi="{{ $d->lokasi }}"
+                    data-startdate="{{ $d->start_date }}"
+                    data-enddate="{{ $d->end_date }}"
+                    data-nilaikontrak="{{ $d->nilai_kontrak }}">
+                      Ubah
+                  </button>
+                  <button 
+                    type="button" 
+                    class="modahapus btn btn-block btn-outline-danger btn-xs" 
+                    data-toggle="modal" 
+                    data-id="{{ $d->id }}" 
+                    data-target="#modal-hapus">
+                      Hapus
+                  </button>
                 </td>
           		</tr>
           		@endforeach
@@ -188,7 +224,7 @@
               @include('showdetail')
             </div>
             <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
             </div>
           </div>
           <!-- /.modal-content -->
@@ -209,11 +245,14 @@
             </div>
             <div class="modal-body">
               <p>Apakah anda yakin untuk menghapus data ini ?</p>
-              <button type="button" class="btn btn-primary">Iya</button>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
             </div>
             <div class="modal-footer justify-content-between">
-            * 
+              <div class="col-md-2" id="dhref">
+                <a href=""><button type="button" class="btn btn-block btn-success btn-md">Iya</button></a>
+              </div>
+              <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-secondary btn-md" data-dismiss="modal">Tidak</button>
+              </div>
             </div>
           </div>
           <!-- /.modal-content -->
@@ -244,7 +283,7 @@
       "autoWidth": false,
     });
   });
-
+// Function Show Detail
   $(document).on("click", ".modalihat", function () {
      
       var title = $(this).data('title');
@@ -293,4 +332,66 @@
       $("#enddate").html( enddate );
       $("#nilaikontrak").html( nilaikontrak );
   });
+// Function Show Detail
+
+// Function Edit
+$(document).on("click", ".modaedit", function () {
+     var id = $(this).data('id');
+     var title = $(this).data('title');
+     var nomorkontrak = $(this).data('nomorkontrak');
+     var vendor = $(this).data('vendor');
+     var jenissewa = $(this).data('jenissewa');
+     var nsa = $(this).data('nsa');
+     var nsb = $(this).data('nsb');
+     var nsc = $(this).data('nsc1');
+     var nsc2 = $(this).data('nsc2');
+     var nsd1 = $(this).data('nsd1');
+     var nsd2 = $(this).data('nsd2');
+     var is1 = $(this).data('is1');
+     var is2 = $(this).data('is2');
+     var is3 = $(this).data('is3');
+     var is4 = $(this).data('is4');
+     var is5 = $(this).data('is5');
+     var is6 = $(this).data('is6');
+     var is7 = $(this).data('is7');
+     var komponen = $(this).data('komponen');
+     var lokasi = $(this).data('lokasi');
+     var startdate = $(this).data('startdate');
+     var enddate = $(this).data('enddate');
+     var nilaikontrak = $(this).data('nilaikontrak');
+
+     $("#id").val( id );
+     $("#etitle").val( title );
+     $("#enomorkontrak").val( nomorkontrak );
+     $("#evendor").val( vendor );
+     $("#ejenissewa").val( jenissewa );
+     $("#ensa").val( nsa );
+     $("#ensb").val( nsb );
+     $("#ensc").val( nsc1 );
+     $("#ensc2").val( nsc2 );
+     $("#ensd1").val( nsd1 );
+     $("#ensd2").val( nsd2 );
+     $("#eis1").val( is1 );
+     $("#eis2").val( is2 );
+     $("#eis3").val( is3 );
+     $("#eis4").val( is4 );
+     $("#eis5").val( is5 );
+     $("#eis6").val( is6 );
+     $("#eis7").val( is7 );
+     $("#ekomponen").val( komponen );
+     $("#elokasi").val( lokasi );
+     $("#estartdate").val( startdate );
+     $("#eenddate").val( enddate );
+     $("#enilaikontrak").val( nilaikontrak );
+ });
+// Function Edit
+
+// Function Delete
+$(document).on("click", ".modahapus", function () {
+     var did = $(this).data('id');
+     $("#dhref a").attr("href", 'input/delete/'+did)
+     
+ });
+//  Function Delete
+
 </script>

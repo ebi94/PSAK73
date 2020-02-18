@@ -25,6 +25,8 @@ Route::get('input', function () {
 
 Route::get('list', 'DataController@index');
 Route::get('input/add','FormController@add');
+Route::get('input/edit','FormController@edit');
+Route::get('input/delete/{id}','FormController@delete');
 
 Route::get('data', 'DataController@index');
 Route::get('data/export_excel', 'DataController@export_excel');
