@@ -12,7 +12,7 @@
           <table id="example1" class="table table-bordered table-striped">
             <thead>
             <tr>
-              <th>No</th>
+              <th>Nope</th>
               <th>Nama PT</th>
               <th>Nomor Kontrak</th>
               <th>Vendor</th>
